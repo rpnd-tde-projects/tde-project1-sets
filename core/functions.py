@@ -49,7 +49,18 @@ def difference(set1: set, set2: set) -> set:
 
 def cartesian_product(set1: set, set2: set) -> set:
     """
-    TBD
-    """
-    ...
+    Retorna o produto cartesiano de dois conjuntos.
 
+    Parâmetros:
+        set1 (set): O primeiro conjunto.
+        set2 (set): O segundo conjunto.
+
+    Retorno:
+        set: Um novo conjunto contendo pares ordenados (tuplas), onde cada par é formado 
+        por um elemento de set1 e um elemento de set2.
+    """
+    result = set()
+    for i in set1:
+        for j in set2:
+            result.add((i, j))
+    return result

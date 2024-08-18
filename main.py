@@ -1,4 +1,4 @@
-from core.functions import union, intersection, difference
+from core.functions import union, intersection, difference, cartesian_product
 from core.utils import get_valid_input_file
 
 
@@ -30,12 +30,10 @@ while i < len(lines):
         print(f"Diferença: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}")
         operations_counter += 1
 
-    """
     elif operation == "C":
         result = cartesian_product(set1, set2)
         print(f"Produto Cartesiano: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}")
         operations_counter += 1
-    """
 
     i += 3
 
