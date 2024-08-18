@@ -8,31 +8,37 @@ lines: list[str] = get_valid_input_file()
 operations_number: str = lines[0].strip()
 operations_counter: int = 0
 
+print("")
+
 i = 1
 while i < len(lines):
-    operation = lines[i].strip()
+    operation: str = lines[i].strip()
 
-    set1 = set(lines[i + 1].strip().split(', '))
-    set2 = set(lines[i + 2].strip().split(', '))
+    set1: set[str] = set(lines[i + 1].strip().split(', '))
+    set2: set[str] = set(lines[i + 2].strip().split(', '))
 
     if operation == "U":
-        result = union(set1, set2)
-        print(f"\nUnião: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}")
+        result: set = union(set1, set2)
+        text: str = f"União: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}"
+        print(text)
         operations_counter += 1
     
     elif operation == "I":
-        result = intersection(set1, set2)
-        print(f"Interseção: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}")
+        result: set = intersection(set1, set2)
+        text: str = f"Interseção: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}"
+        print(text)
         operations_counter += 1
 
     elif operation == "D":
-        result = difference(set1, set2)
-        print(f"Diferença: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}")
+        result: set = difference(set1, set2)
+        text: str = f"Diferença: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}"
+        print(text)
         operations_counter += 1
 
     elif operation == "C":
-        result = cartesian_product(set1, set2)
-        print(f"Produto Cartesiano: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}")
+        result: set = cartesian_product(set1, set2)
+        text: str = f"Produto Cartesiano: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}"
+        print(text)
         operations_counter += 1
 
     i += 3

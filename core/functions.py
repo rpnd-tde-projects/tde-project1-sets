@@ -1,3 +1,4 @@
+from core.utils import add_color_to_text
 from typing import Union
 
 
@@ -28,7 +29,7 @@ def intersection(set1: set, set2: set) -> Union[set, str]:
         ou uma string "Disjunção" se não houver elementos em comum.
     """
     if set1.isdisjoint(set2):
-        return "Disjunção"
+        return add_color_to_text("Disjunção", "red")
     else:
         return set1.intersection(set2)
 
