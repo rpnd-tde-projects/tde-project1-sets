@@ -55,6 +55,7 @@ Ao executar o programa os resultados serão impressos na tela conforme exemplo a
     União: conjunto 1 {'3', '67', '7', '5'}, conjunto 2 {'2', '4', '3', '1'}, Resultado: {'2', '67', '3', '5', '7', '4', '1'}
     Interseção: conjunto 1 {'10', '6', '8', '4', '2'}, conjunto 2 {'7', '5', '9', '3', '1'}, Resultado: Disjunção
     Diferença: conjunto 1 {'E', 'B', 'D', 'C', 'A'}, conjunto 2 {'B', 'X', 'C', 'Y'}, Resultado: {'E', 'D', 'A'}
+    Produto Cartesiano: conjunto 1 {'7', '2'}, conjunto 2 {'Y', 'X'}, Resultado: {('2', 'Y'), ('7', 'X'), ('2', 'X'), ('7', 'Y')}
 
     Número total de operações realizadas: 3/4
 ```
