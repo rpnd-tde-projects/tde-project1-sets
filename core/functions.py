@@ -1,3 +1,6 @@
+# Aluno: Renato Pestana de Gouveia
+
+
 from core.utils import add_color_to_text
 from typing import Union
 

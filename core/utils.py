@@ -1,3 +1,6 @@
+# Aluno: Renato Pestana de Gouveia
+
+
 def get_valid_input_file() -> list[str]:
     """
     Solicita ao usuário que insira o nome de um arquivo válido e retorna as linhas do arquivo.
