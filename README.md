@@ -82,7 +82,7 @@ Ao executar o programa os resultados serão impressos na tela conforme exemplo a
 
 # Desenvolvimento
 Este programa foi desenvolvido seguindo as boas práticas de programação em Python.
-Para efetuar o desenvolvimento utilizei dos tutoriais disponíveis abaixo:
+Para efetuar o desenvolvimento utilizei os tutoriais disponíveis abaixo:
 
 https://www.tutorialspoint.com/python/python_file_handling.htm
 https://www.tutorialspoint.com/python/python_sets.htm
