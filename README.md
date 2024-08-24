@@ -27,6 +27,12 @@ Siga estas etapas simples abaixo para utilizar este programa.
 1. **Inspecione os Dados:**
     - Foi preparado 3 arquivos textos na raíz do projeto nos quais possuem as intruções para realizar as operações para avaliação
     - Estes arquivos são: input_1.txt, input_2.txt e input_3.txt
+    - Caso deseje criar seu próprio arquivo de entrada siga estas recomendações:
+        - Crie o arquivo na pasta raíz do repositório
+        - Siga o mesmo padrão estabelecido nos arquivos existentes
+            - Primeira linha é o número total de operações
+            - Segunda linha para identificar a operação a ser realizada (U = União, I = Interseção, D = Diferença, C = Produto Cartesiano)
+            - Terceira e quarta linha definem os conjuntos a serem utilizados nas operações
 
 2. **Execute o Script Principal:**
     ```bash
@@ -47,6 +53,20 @@ Siga estas etapas simples abaixo para utilizar este programa.
     Arquivo 'abacaxi' não encontrado. Por favor, tente novamente.
 
     Digite o nome do arquivo texto: 
+    ```
+
+    Se o arquivo de entrada estiver vazio, o programa exibirá a seguinte mensagem de erro e encerrará a execução:
+    ```bash
+    Programa de Operações com Conjuntos
+    Digite o nome do arquivo texto: test.txt
+    Arquivo de entrada está vazio. Encerrando o programa.
+    ```
+
+    Se o número de operações informado não for um número inteiro válido, o programa exibirá a seguinte mensagem de erro e encerrará a execução:
+    ```bash
+    Programa de Operações com Conjuntos
+    Digite o nome do arquivo texto: test.txt
+    O número de operações deve ser um número inteiro. Encerrando o programa.
     ```
 
 ## Resultados
