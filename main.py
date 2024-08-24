@@ -66,7 +66,7 @@ while i < len(lines):
         operations_counter += 1
 
     elif operation == "D":
-        result: set = difference(set1, set2)
+        result: Union[set, str] = difference(set1, set2)
         text: str = f"Diferença: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}"
         print(text)
         operations_counter += 1

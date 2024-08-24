@@ -37,18 +37,22 @@ def intersection(set1: set, set2: set) -> Union[set, str]:
         return set1.intersection(set2)
 
 
-def difference(set1: set, set2: set) -> set:
+def difference(set1: set, set2: set) -> Union[set, str]:
     """
-    Retorna a diferença entre dois conjuntos.
+    Retorna a diferença entre dois conjuntos. Caso os conjuntos sejam disjuntos, retorna "Disjunção".
 
     Parâmetros:
         set1 (set): O primeiro conjunto.
         set2 (set): O segundo conjunto.
 
     Retorno:
-        set: Um novo conjunto contendo os elementos presentes em set1, mas não em set2.
+        set ou str: Um novo conjunto contendo os elementos presentes em set1, mas não em set2,
+                    ou a string "Disjunção" se os conjuntos forem disjuntos.
     """
-    return set1.difference(set2)
+    if set1.isdisjoint(set2):
+        return add_color_to_text("Disjunção", "red")
+    else:
+        return set1.difference(set2)
 
 
 def cartesian_product(set1: set, set2: set) -> set:
