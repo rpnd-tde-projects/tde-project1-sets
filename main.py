@@ -30,17 +30,20 @@ Observe que o professor irá testar seu programa com os arquivos de testes que v
 """
 
 
+from core.validation import prompt_for_valid_file, validate_operations_number, is_input_file_empty
 from core.functions import union, intersection, difference, cartesian_product
-from core.utils import get_valid_input_file
 from typing import Union
 
 
 print("Programa de Operações com Conjuntos")
 
-lines: list[str] = get_valid_input_file()
-operations_number: str = lines[0].strip()
-operations_counter: int = 0
+lines: list[str] = prompt_for_valid_file()
+is_input_file_empty(lines)
 
+operations_number: str = lines[0].strip()
+validate_operations_number(operations_number)
+
+operations_counter: int = 0
 print("")
 
 i = 1
