@@ -32,6 +32,7 @@ Observe que o professor irá testar seu programa com os arquivos de testes que v
 
 from core.functions import union, intersection, difference, cartesian_product
 from core.utils import get_valid_input_file
+from typing import Union
 
 
 print("Programa de Operações com Conjuntos")
@@ -56,7 +57,7 @@ while i < len(lines):
         operations_counter += 1
     
     elif operation == "I":
-        result: set = intersection(set1, set2)
+        result: Union[set, str] = intersection(set1, set2)
         text: str = f"Interseção: conjunto 1 {set1}, conjunto 2 {set2}, Resultado: {result}"
         print(text)
         operations_counter += 1
